@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mundo das Pirâmides</title>
+
+    <!-- Fonte do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Pele.css">
+
+    <!-- Biblioteca Three.js -->
+<script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+}
+</script>
+
+    <!-- JavaScript -->
+    <script src="Musculo.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <div class="container navegacao">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-icone">▲</span>
+                Mundo das Pirâmides
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <nav class="menu" id="menu">
+
+                <a href="#inicio">Início</a>
+                <a href="#introducao">Introdução</a>
+                <a href="#elementos">Elementos</a>
+                <a href="#conteudos">Conteúdos</a>
+                <a href="#planificacao">Planificação</a>
+                <a href="#quiz">Quiz</a>
+
+                <a href="#laboratorio" class="botao-menu">
+                    Explorar 3D
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- APRESENTAÇÃO -->
+    <main>
+
+        <section class="inicio" id="inicio">
+
+            <div class="container inicio-conteudo">
+
+                <div class="inicio-texto">
+
+                    <span class="etiqueta">
+                        APRENDA GEOMETRIA DE FORMA INTERATIVA
+                    </span>
+
+                    <h1>
+                        Explore o universo das
+                        <span> Pirâmides Geométricas</span>
+                    </h1>
+
+                    <p>
+                        Descubra os segredos das pirâmides, explore
+                        modelos tridimensionais, aprenda fórmulas
+                        matemáticas e resolva cálculos de maneira
+                        simples e interativa.
+                    </p>
+
+                    <div class="inicio-botoes">
+
+                        <a href="#laboratorio" class="botao-principal">
+                            Explorar pirâmides →
+                        </a>
+
+                        <a href="#introducao" class="botao-secundario">
+                            Começar a aprender
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="inicio-visual">
+
+                    <div class="circulo-fundo"></div>
+
+                    <div class="piramide-ilustracao">
+                        ▲
+                    </div>
+
+                    <span class="detalhe detalhe-1">3D</span>
+                    <span class="detalhe detalhe-2">GEOMETRIA</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUÇÃO -->
+        <section class="secao" id="introducao">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span class="subtitulo">CONHECIMENTO</span>
+
+                    <h2>O que são pirâmides?</h2>
+
+                    <p>
+                        Conheça uma das figuras mais interessantes
+                        da geometria espacial.
+                    </p>
+
+                </div>
+
+                <div class="cartao-introducao">
+
+                    <h3>Entendendo as pirâmides</h3>
+
+                    <p>
+                        Uma pirâmide é um sólido geométrico que possui
+                        uma base formada por um polígono e faces laterais
+                        triangulares que se encontram em um único vértice,
+                        chamado de ápice.
+                    </p>
+
+                    <a href="#elementos" class="link-saiba">
+                        Conhecer os elementos →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ELEMENTOS -->
+        <section class="secao secao-escura" id="elementos">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span class="subtitulo">ESTRUTURA GEOMÉTRICA</span>
+
+                    <h2>Elementos de uma pirâmide</h2>
+
+                    <p>
+                        Conheça as principais partes que formam
+                        esse sólido geométrico.
+                    </p>
+
+                </div>
+
+                <div class="grade-cartoes">
+
+                    <article class="cartao">
+                        <span class="icone">△</span>
+                        <h3>Faces</h3>
+                        <p>
+                            Superfícies planas que formam
+                            a pirâmide.
+                        </p>
+                    </article>
+
+                    <article class="cartao">
+                        <span class="icone">◇</span>
+                        <h3>Arestas</h3>
+                        <p>
+                            Segmentos de reta que delimitam
+                            as faces.
+                        </p>
+                    </article>
+
+                    <article class="cartao">
+                        <span class="icone">●</span>
+                        <h3>Vértices</h3>
+                        <p>
+                            Pontos onde duas ou mais arestas
+                            se encontram.
+                        </p>
+                    </article>
+
+                    <article class="cartao">
+                        <span class="icone">↕</span>
+                        <h3>Altura</h3>
+                        <p>
+                            Distância perpendicular entre
+                            o ápice e a base.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTEÚDOS -->
+        <section class="secao" id="conteudos">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span class="subtitulo">APRENDA NA PRÁTICA</span>
+
+                    <h2>Explore os conteúdos</h2>
+
+                    <p>
+                        Escolha uma área e comece a estudar.
+                    </p>
+
+                </div>
+
+                <div class="grade-cartoes">
+
+                    <article class="cartao cartao-conteudo">
+                        <span class="icone">📐</span>
+                        <h3>Fórmulas matemáticas</h3>
+                        <p>
+                            Aprenda a calcular áreas, perímetros
+                            e volumes.
+                        </p>
+                    </article>
+
+                    <article class="cartao cartao-conteudo">
+                        <span class="icone">🧮</span>
+                        <h3>Calculadora</h3>
+                        <p>
+                            Insira medidas e descubra
+                            os resultados automaticamente.
+                        </p>
+                    </article>
+
+                    <article class="cartao cartao-conteudo">
+                        <span class="icone">📚</span>
+                        <h3>Exercícios</h3>
+                        <p>
+                            Resolva problemas matemáticos
+                            passo a passo.
+                        </p>
+                    </article>
+
+                    <article class="cartao cartao-conteudo">
+                        <span class="icone">🎯</span>
+                        <h3>Quiz</h3>
+                        <p>
+                            Teste seus conhecimentos
+                            sobre pirâmides.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LABORATÓRIO 3D -->
+        <section class="secao secao-escura" id="laboratorio">
+
+            <div class="container">
+
+                <div class="titulo-secao">
+
+                    <span class="subtitulo">EXPERIÊNCIA INTERATIVA</span>
+
+                    <h2>Laboratório 3D</h2>
+
+                    <p>
+                        Escolha diferentes tipos de pirâmides e explore
+suas características em três dimensões.
+                    </p>
+
+                </div>
+
+
+                <!-- SELETOR DE PIRÂMIDES -->
+                <div class="seletor-piramide">
+
+                    <label for="tipo-piramide">
+                        Escolha o tipo de pirâmide:
+                    </label>
+
+                    <select id="tipo-piramide">
+                        <option value="3">Pirâmide triangular</option>
+                        <option value="4" selected>Pirâmide quadrangular</option>
+                        <option value="5">Pirâmide pentagonal</option>
+                        <option value="6">Pirâmide hexagonal</option>
+                    </select>
+
+                </div>
+
+                <!-- INFORMAÇÕES MATEMÁTICAS -->
+                <div class="informacoes-piramide">
+
+                    <div class="info-item">
+                        <span>Faces</span>
+                        <strong id="quantidade-faces">5</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Arestas</span>
+                        <strong id="quantidade-arestas">8</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Vértices</span>
+                        <strong id="quantidade-vertices">5</strong>
+                    </div>
+
+                </div>
+
+                <!-- VISUALIZADOR 3D -->
+               
+<!-- BOTÕES DE VISUALIZAÇÃO -->
+<div class="controles-visualizacao">
+
+    <button type="button" id="botao-faces" class="botao-3d ativo">
+        Faces
+    </button>
+
+    <button type="button" id="botao-arestas" class="botao-3d">
+        Arestas
+    </button>
+
+    <button type="button" id="botao-vertices" class="botao-3d">
+        Vértices
+    </button>
+
+</div>
+
+<!-- VISUALIZADOR 3D -->
+
+<!-- VISUALIZADOR 3D -->
+<div class="laboratorio-caixa">
+    <div id="visualizador-3d"></div>
+</div>
+
+<!-- =================================
+     CALCULADORA DE VOLUME
+================================= -->
+
+<div class="calculadora-volume">
+
+    <h3>Calculadora de Volume</h3>
+
+    <p>
+        Informe as medidas de uma pirâmide regular
+        para descobrir seu volume.
+    </p>
+
+    <div class="calculadora-campos">
+
+        <div class="campo-calculadora">
+            <label for="calc-tipo">Tipo de pirâmide</label>
+
+            <select id="calc-tipo">
+                <option value="3">Triangular regular</option>
+                <option value="4" selected>Quadrangular regular</option>
+                <option value="5">Pentagonal regular</option>
+                <option value="6">Hexagonal regular</option>
+            </select>
+        </div>
+
+        <div class="campo-calculadora">
+            <label for="calc-lado">
+                Lado da base (cm)
+            </label>
+
+            <input
+                type="number"
+                id="calc-lado"
+                min="0.01"
+                step="any"
+                placeholder="Ex.: 4"
+            >
+        </div>
+
+        <div class="campo-calculadora">
+            <label for="calc-altura">
+                Altura da pirâmide (cm)
+            </label>
+
+            <input
+                type="number"
+                id="calc-altura"
+                min="0.01"
+                step="any"
+                placeholder="Ex.: 6"
+            >
+        </div>
+
+    </div>
+
+    <button type="button" id="calcular-volume">
+        Calcular Volume
+    </button>
+
+    
+<div id="resultado-volume" class="resultado-volume" hidden>
+</div>
+
+</div>
+
+            </div>
+        </section>
+
+
+<!-- =================================
+     PLANIFICAÇÃO DAS PIRÂMIDES
+================================= -->
+
+<section class="secao secao-escura" id="planificacao">
+
+    <div class="container">
+
+        <div class="titulo-secao">
+
+            <span class="subtitulo">
+                GEOMETRIA PLANA E ESPACIAL
+            </span>
+
+            <h2>Planificação das Pirâmides</h2>
+
+            <p>
+                Descubra como as faces de uma pirâmide
+                podem ser representadas em um plano.
+            </p>
+
+        </div>
+
+        <div class="planificacao-caixa">
+
+            <label for="tipo-planificacao">
+                Escolha o tipo de pirâmide:
+            </label>
+
+            <select id="tipo-planificacao">
+                <option value="3">Pirâmide triangular</option>
+                <option value="4" selected>Pirâmide quadrangular</option>
+                <option value="5">Pirâmide pentagonal</option>
+                <option value="6">Pirâmide hexagonal</option>
+            </select>
+            
+<!-- CONTROLES DA PLANIFICAÇÃO 2D -->
+<div class="controles-visualizacao controles-planificacao">
+
+    <button type="button"
+            id="planificacao-botao-faces"
+            class="botao-3d ativo">
+        Faces
+    </button>
+
+    <button type="button"
+            id="planificacao-botao-arestas"
+            class="botao-3d">
+        Arestas
+    </button>
+
+    <button type="button"
+            id="planificacao-botao-vertices"
+            class="botao-3d">
+        Vértices
+    </button>
+
+</div>
+
+            <div class="planificacao-desenho">
+                <svg
+                    id="desenho-planificacao"
+                    viewBox="0 0 400 400"
+                    role="img"
+                    aria-label="Planificação da pirâmide"
+                ></svg>
+            </div>
+
+            <div class="planificacao-informacoes">
+                <div>
+                    <span>Faces</span>
+                    <strong id="planificacao-faces">5</strong>
+                </div>
+
+                <div>
+                    <span>Arestas</span>
+                    <strong id="planificacao-arestas">8</strong>
+                </div>
+
+                <div>
+                    <span>Vértices</span>
+                    <strong id="planificacao-vertices">5</strong>
+                </div>
+            </div>
+
+            <p class="planificacao-legenda">
+                As linhas amarelas tracejadas
+                representam as dobras da planificação.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     QUIZ INTERATIVO
+================================= -->
+
+<section class="secao" id="quiz">
+
+    <div class="container">
+
+        <div class="titulo-secao">
+
+            <span class="subtitulo">
+                TESTE SEUS CONHECIMENTOS
+            </span>
+
+            <h2>Quiz das Pirâmides</h2>
+
+            <p>
+                Responda às perguntas e descubra
+                o quanto você aprendeu sobre
+                pirâmides geométricas.
+            </p>
+
+        </div>
+
+        <div class="quiz-caixa">
+
+            <div id="quiz-jogo">
+
+                <div class="quiz-progresso">
+
+                    <span id="quiz-contador">
+                        Pergunta 1 de 10
+                    </span>
+
+                    <span id="quiz-pontos">
+                        Pontos: 0
+                    </span>
+
+                </div>
+
+                <div class="quiz-barra">
+                    <div id="quiz-barra-preenchimento"></div>
+                </div>
+
+                <h3 id="quiz-pergunta"></h3>
+
+                <div id="quiz-alternativas"></div>
+
+                <div id="quiz-feedback"
+                     class="quiz-feedback"
+                     hidden>
+                </div>
+
+                <button
+                    type="button"
+                    id="quiz-proxima"
+                    class="quiz-botao"
+                    disabled
+                >
+                    Próxima pergunta
+                </button>
+
+            </div>
+
+            <div id="quiz-resultado"
+                 class="quiz-resultado"
+                 hidden>
+
+                <div class="quiz-trofeu">🏆</div>
+
+                <h3>Quiz concluído!</h3>
+
+                <p id="quiz-resultado-texto"></p>
+
+                <strong id="quiz-resultado-pontos"></strong>
+
+                <button
+                    type="button"
+                    id="quiz-reiniciar"
+                    class="quiz-botao"
+                >
+                    Jogar novamente
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="container">
+
+            <h3>Mundo das Pirâmides</h3>
+
+            <p>
+                Uma experiência interativa de aprendizagem
+                da geometria espacial.
+            </p>
+
+            <span>Projeto educativo de Geometria</span>
+
+        </div>
+
+    </footer>
+    
+
+<script type="module" src="piramide3d.js"></script>
+<script src="Quiz.js" defer></script>
+<script src="planificação.js" defer></script>
+
+
+
+</body>
+
+</html>
+
